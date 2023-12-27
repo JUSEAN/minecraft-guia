@@ -50,25 +50,3 @@ header {
         max-width: 800px;
     }
 }
-
-/* ... (Tu CSS existente) */
-
-footer {
-    background-color: #1B1B1B;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Ajustes para pantallas pequeñas */
-@media screen and (max-width: 600px) {
-    #main-content {
-        padding: 0 10px;
-    }
-    footer {
-        position: static;
-    }
-}
