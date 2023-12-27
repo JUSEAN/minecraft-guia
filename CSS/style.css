@@ -1,0 +1,74 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1B1B1B;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post-meta {
+    color: #777;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    #main-content {
+        padding: 0 10px;
+    }
+}
+
+/* Ajustes para tabletas y pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #main-content {
+        max-width: 600px;
+    }
+}
+
+/* Ajustes adicionales si es necesario para pantallas más grandes */
+@media screen and (min-width: 1025px) {
+    #main-content {
+        max-width: 800px;
+    }
+}
+
+/* ... (Tu CSS existente) */
+
+footer {
+    background-color: #1B1B1B;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    #main-content {
+        padding: 0 10px;
+    }
+    footer {
+        position: static;
+    }
+}
