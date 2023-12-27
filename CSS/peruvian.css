@@ -4,34 +4,77 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: brown;
+    min-height: 100vh;
+    background-color: #f8f8f8; /* Cambia el color de fondo del cuerpo */
 }
 
-.fondo-rojo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.5);
-    z-index: -1;
+.container {
+    max-width: 800px;
+    width: 90%;
 }
 
 #d1 {
-    width: 800px;
-    height: 400px;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #3498db; /* Cambia el color de fondo de la alerta */
     color: white;
     border-radius: 30px;
     text-align: center;
+    padding: 20px;
+    animation: fadeIn 0.5s ease; /* Agrega animación de entrada */
 }
 
-#d2 {
-    width: 400px;
-    height: 70px;
-    background-color: brown;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 30px;
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.peruvian-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Cambia el color de fondo de los botones */
+    color: white;
+    margin: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 1s infinite; /* Agrega animación de pulso */
+}
+
+.peruvian-button:hover {
+    background-color: #27ae60; /* Cambia el color al pasar el ratón */
+}
+
+@media screen and (max-width: 600px) {
+    #d1 {
+        padding: 10px;
+    }
+
+    .peruvian-button {
+        width: 100%;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
