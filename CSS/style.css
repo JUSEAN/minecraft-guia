@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
 header {
-    background-color: #1B1B1B;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -15,11 +16,20 @@ header {
 #main-content {
     max-width: 800px;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .post {
     margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.02);
 }
 
 .post h2 {
@@ -30,23 +40,40 @@ header {
     color: #777;
 }
 
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Ajustes para pantallas pequeñas */
 @media screen and (max-width: 600px) {
     #main-content {
-        padding: 0 10px;
+        padding: 10px;
     }
 }
 
-/* Ajustes para tabletas y pantallas medianas */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    #main-content {
-        max-width: 600px;
-    }
+/* Animaciones */
+.post, footer {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Ajustes adicionales si es necesario para pantallas más grandes */
-@media screen and (min-width: 1025px) {
-    #main-content {
-        max-width: 800px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
