@@ -1,10 +1,11 @@
 body {
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: transparent;
+    background-color: brown;
 }
 
 .fondo-rojo {
@@ -17,24 +18,20 @@ body {
     z-index: -1;
 }
 
-.centrado {
-    position: relative; /* Necesario para alinear el contenido dentro */
+#d1 {
     width: 800px;
     height: 400px;
-    margin: 0 auto; /* Centrar horizontalmente */
-    background-color: #ff0000;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #fff;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border-radius: 30px;
     text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
-.centrado h2 {
-    margin-top: 0;
-}
-
-.centrado p {
-    font-size: 18px;
+#d2 {
+    width: 400px;
+    height: 70px;
+    background-color: brown;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 30px;
 }
